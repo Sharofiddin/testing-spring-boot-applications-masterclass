@@ -2,7 +2,7 @@
 
 [![Masterclass](https://rieckpil.de/wp-content/uploads/2020/09/testing-spring-boot-applications-masterclass-course-logo.png)](https://rieckpil.de/testing-spring-boot-applications-masterclass/)
 
-[![](https://img.shields.io/badge/Spring%20Boot%20Version-3.3.0-orange)](/pom.xml)
+[![](https://img.shields.io/badge/Spring%20Boot%20Version-3.5.0-orange)](/pom.xml)
 [![](https://img.shields.io/badge/Java%20Version-21-orange)](/pom.xml)
 [![](https://img.shields.io/badge/Enroll-Now-orange)](https://rieckpil.de/testing-spring-boot-applications-masterclass/)
 
@@ -109,7 +109,7 @@ Even though the technical setup for your day-to-day projects might differ, the t
 
 <p align="center">
   <a href="https://rieckpil.de/testing-spring-boot-applications-masterclass/">
-    <img src="https://rieckpil.de/wp-content/uploads/2023/03/tsbam-testiomonials.png" alt="Testing Spring Boot Applications Masterclass Testimonials">
+    <img src="src/docs/images/tsbam-testimonials.png" alt="Testing Spring Boot Applications Masterclass Testimonials">
   </a>
 </p>
 
@@ -218,7 +218,7 @@ Run all **unit** tests (Maven Surefire Plugin): `./mvnw test`
 Run all **integration & web** tests (Maven Failsafe plugin):
 
 1. Make sure no conflicting Docker containers are currently running: `docker ps`
-2. Make sure the test classes have been compiled and the frontend has been build and is part of the `target/classes/public` folder: `./mvnw package -DskipTest`
+2. Make sure the test classes have been compiled and the frontend has been built and is part of the `target/classes/public` folder: `./mvnw package -DskipTest`
 3. Execute `./mvnw failsafe:integration-test failsafe:verify`
 
 Run **all tests** together:
